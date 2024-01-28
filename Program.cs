@@ -31,10 +31,6 @@ class Program
         var apiDataProviderC = await CallApi(apiUrlProviderC);
         var apiDataProviderD = await CallApi(apiUrlProviderD);
 
-        // Write data to Excel
-        //WriteToExcel(apiData1, sheetName1, "output.xlsx");
-        //WriteToExcel(apiData2, sheetName2, "output.xlsx");
-
         // Combine data from the AgreementBids APIs
         var agreementBidsData = CombineAgreementBids(apiDataProviderA, apiDataProviderB, apiDataProviderC, apiDataProviderD);
 
